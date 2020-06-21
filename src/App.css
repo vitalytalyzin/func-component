@@ -1,38 +1,102 @@
-.App {
-  text-align: center;
+@import url(https://fonts.googleapis.com/css?family=Muli:400,300italic,300,400italic);
+
+body, html {
+  margin: 0;
+  font-family: muli;
+  height: 100%;
+  padding: 0;
+  overflow-x: hidden;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1, h2, h3 {
+  margin: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h1 {
+  font-size: 48px;
+  text-transform: uppercase;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+h3 {
+  color: #666;
+  font-size: 19px;
+  text-transform: uppercase;
+}
+
+button {
+  background: #333;
+  border: none;
+  font-weight: 400;
+  height: 40px;
+  margin-top: auto;
+  margin-bottom: auto;
+  padding-left: 25px;
+  padding-right: 25px;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+  text-transform: uppercase;
+}
+
+button:hover {
+  background: #555;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  height: 100vh;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background: #999;
 }
 
-.App-link {
-  color: #61dafb;
+.background-element {
+  background: #457;
+  position: absolute;
+  width: 120%;
+  height: 400px;
+  left: -50px;
+  top: -80px;
+  -webkit-transform: rotate(-5deg);
+  -ms-transform: rotate(-5deg);
+  transform: rotate(-5deg);
+  -webkit-transition: background .6s ease;
+  transition: background .6s ease;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.highlight-window {
+  height: 550px;
+  width: 400px;
+  background: #ccc;
+  background: url('img/item-blue.jpg');
+  background-size: cover;
+  box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.2);
+  z-index: 10;
+  position: relative;
+  background-position: center top;
+}
+
+.window {
+  background: #fff;
+  width: 470px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 400px;
+  position: relative;
+  box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.2);
 }
